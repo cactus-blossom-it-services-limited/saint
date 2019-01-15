@@ -14,7 +14,7 @@
 - Run ``gulp sass`` from inside the root directory to compile .scss files
 
 Il est nécessaire que d'autres tâches soient ajoutées à gulp:
-1. To Watch for changes to the .scss files
+1. To watch for changes to the .scss files
 2. To minify the .css files
 
 
