@@ -1,0 +1,37 @@
+bootstrap:
+  version: 4.2.1
+  css:
+    theme:
+      /css/main.css: {}
+  js:
+    /vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js: {}
+  dependencies:
+    - core/jquery
+
+material-design-icons:
+  version: VERSION
+  css:
+    theme:
+      //fonts.googleapis.com/icon?family=Material+Icons: { type: external }
+
+base:
+  version: VERSION
+  css:
+    theme:
+      css/saint.css: {}
+  js:
+    js/saint.js: {}
+  dependencies:
+    - core/jquery
+
+webfonts:
+  version: VERSION
+  css:
+    theme:
+      //fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Roboto+Slab: { type: external }
+
+fontawesome:
+  version: VERSION
+  css:
+    theme:
+      https://use.fontawesome.com/releases/v5.6.3/css/all.css: { type: external }

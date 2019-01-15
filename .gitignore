@@ -1,0 +1,5 @@
+# The vendor directory contains the bootstrap 4 source files
+# They are compiled into css and js files positioned in the theme root
+# The bootstrap 4 source .scss files inside vendor/ are imported into main.scss in the theme root
+# and then compiled into main.css in the theme root
+vendor/
