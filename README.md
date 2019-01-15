@@ -9,10 +9,11 @@
 
 ### Instructions
 - The bootstrap 4 source files are installed using composer
-- Find them inside the vendor/twbs/bootstrap directory
+- Run ``composer require twbs/bootstrap`` inside the theme root
+- The bootstrap source files are inside the vendor/twbs/bootstrap directory
 - Run ``gulp sass`` from inside the root directory to compile .scss files
 
- Tasks need to be written inside the gulpfile.js to watch for changes to .scss files
+ Gulp tasks need to added to watch for changes to .scss files
  and to minify .css files
 
 
