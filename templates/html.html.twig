@@ -34,6 +34,7 @@
     <js-placeholder token="{{ placeholder_token }}">
   </head>
   <body{{ attributes }}>
+  <div class="container">
     {#
       Keyboard navigation/accessibility link to main content section in
       page.html.twig.
@@ -45,5 +46,6 @@
     {{ page }}
     {{ page_bottom }}
     <js-bottom-placeholder token="{{ placeholder_token }}">
+    </div>
   </body>
 </html>
