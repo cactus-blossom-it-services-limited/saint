@@ -1,3 +1,7 @@
-{% if title is not empty or required -%}
+{%
+    set classes = [
+    'image-checkbox',
+]
+%}
 <label{{ attributes.addClass(classes) }}>
-{%- endif %}
+    <img class="img-fluid" src="https://github.com/cactus-blossom-it-services-limited/millais/blob/master/radio-image-1.jpeg?raw=true" />
