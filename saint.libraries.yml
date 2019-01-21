@@ -2,9 +2,9 @@ bootstrap:
   version: 4.2.1
   css:
     theme:
-      /css/main.css: {}
+      css/main.css: {}
   js:
-    /vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js: {}
+    vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js: {}
   dependencies:
     - core/jquery
 
