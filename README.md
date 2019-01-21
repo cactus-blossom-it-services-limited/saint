@@ -13,9 +13,15 @@
 - The bootstrap source files are inside the vendor/twbs/bootstrap directory
 - Run ``gulp sass`` from inside the root directory to compile .scss files
 
+<<<<<<< HEAD
  Gulp tasks need to added to watch for changes to .scss files
  and to minify .css files
  Also the package.json inside vendor/twbs/bootstrap needs updated to include
  gulp plugins. Those plugins should also be installed
+=======
+Il est nécessaire que d'autres tâches soient ajoutées à gulp:
+1. To watch for changes to the .scss files
+2. To minify the .css files
+>>>>>>> a277f843b7b05cdcb4e7a3e9e84d0388364f3503
 
 
