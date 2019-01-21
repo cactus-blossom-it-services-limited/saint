@@ -15,5 +15,7 @@
 
  Gulp tasks need to added to watch for changes to .scss files
  and to minify .css files
+ Also the package.json inside vendor/twbs/bootstrap needs updated to include
+ gulp plugins. Those plugins should also be installed
 
 
