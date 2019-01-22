@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Saint's theme implementation to display a single page.
+ * Bootstrap Barrio's theme implementation to display a single page.
  *
  * The doctype, html, head and body tags are not in this template. Instead they
  * can be found in the html.html.twig template normally located in the
@@ -63,7 +63,7 @@
  * - sidebar_collapse: If the sidebar_first will collapse.
  *
  * @see template_preprocess_page()
- * @see saint_preprocess_page()
+ * @see bootstrap_barrio_preprocess_page()
  * @see html.html.twig
  */
 #}
@@ -72,8 +72,10 @@
     <header id="header" class="header" role="banner" aria-label="{{ 'Site header'|t}}">
       {% block head %}
         {% if page.secondary_menu or page.top_header or page.top_header_form %}
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <nav{{ navbar_top_attributes }}>
+          {% if container_navbar %}
           <div class="container">
+          {% endif %}
               {{ page.secondary_menu }}
               {{ page.top_header }}
               {% if page.top_header_form %}
@@ -81,11 +83,15 @@
                   {{ page.top_header_form }}
                 </div>
               {% endif %}
+          {% if container_navbar %}
           </div>
+          {% endif %}
           </nav>
         {% endif %}
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav{{ navbar_attributes }}>
+          {% if container_navbar %}
           <div class="container">
+          {% endif %}
             {{ page.header }}
             {% if page.primary_menu or page.header_form %}
               <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -101,7 +107,9 @@
             {% if sidebar_collapse %}
               <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#CollapsingLeft" aria-controls="CollapsingLeft" aria-expanded="false" aria-label="Toggle navigation"></button>
             {% endif %}
+          {% if container_navbar %}
           </div>
+          {% endif %}
         </nav>
       {% endblock %}
     </header>
