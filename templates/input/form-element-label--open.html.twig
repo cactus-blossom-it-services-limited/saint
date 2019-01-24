@@ -1,7 +1,29 @@
+<?php
+{#
+/**
+ * @file
+ * Default theme implementation for a form element label.
+ *
+ * Available variables:
+ * - title: The label's text.
+ * - title_display: Elements title_display setting.
+ * - required: An indicator for whether the associated form element is required.
+ * - attributes: A list of HTML attributes for the label.
+ *
+ * @see template_preprocess_form_element_label()
+ *
+ * @ingroup themeable
+ */
+#}
 {%
     set classes = [
+    title_display == 'after' ? 'option',
+    title_display == 'invisible' ? 'visually-hidden',
+    required ? 'js-form-required',
+    required ? 'form-required',
     'image-checkbox',
 ]
 %}
+{% if title is not empty or required -%}
 <label{{ attributes.addClass(classes) }}>
-    <img class="img-fluid" src="https://github.com/cactus-blossom-it-services-limited/millais/blob/master/radio-image-1.jpeg?raw=true" />
+{%- endif %}
